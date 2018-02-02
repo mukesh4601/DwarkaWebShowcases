@@ -1,0 +1,94 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+    height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    background-color: ghostwhite;
+    border: none;
+    height: 30px;
+    padding: 10px;
+}
+
+
+#map {
+    width: 100%;
+    margin-top: 20px;
+    height: 460px;
+}
+#listing {
+    overflow: auto;
+    cursor: pointer;
+    overflow-x: hidden;
+    display: inline;
+    margin-top: 20px;
+    padding: 10px;
+}
+#findhotels {
+    font-size: 14px;
+    padding: 4px;
+    z-index: 5;
+}
+#locationField {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#autocomplete {
+    width: 50%;
+}
+.placeIcon {
+    width: 20px;
+    height: 34px;
+    margin: 4px;
+}
+.hotelIcon {
+    width: 24px;
+    height: 24px;
+}
+
+#results{
+    border: 1px solid wheat;
+}
+
+#results td {
+    width: 10%;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+
+}
+
+#country{
+    background-color: blue;
+    width: 49%;
+    height: 30px;
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+#rating {
+    font-size: 13px;
+    font-family: Arial Unicode MS;
+}
+
+
+.iw_table_row {
+    height: 18px;
+
+}
+.iw_attribute_name {
+    font-weight: bold;
+    text-align: right;
+    padding: 5px;
+}
+.iw_table_icon {
+    text-align: right;
+    padding: 5px;
+}

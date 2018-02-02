@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Place Autocomplete Hotel Search</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+</head>
+
+
+
+<body>
+
+<div class="container">
+<div class="row">
+
+    <div class="col s6" id="locationField">
+        <h2>Find hotels in</h2>
+    </div>
+
+
+    <div class="col s6">
+
+        <select id="country">
+        <option value="all" selected>All</option>
+        <option value="au" >Australia</option>
+        <option value="br">Brazil</option>
+        <option value="ca">Canada</option>
+        <option value="fr">France</option>
+        <option value="de">Germany</option>
+        <option value="mx">Mexico</option>
+        <option value="nz">New Zealand</option>
+        <option value="it">Italy</option>
+        <option value="za">South Africa</option>
+        <option value="es">Spain</option>
+        <option value="pt">Portugal</option>
+        <option value="us" >U.S.A.</option>
+        <option value="in">India</option>
+        <option value="uk">United Kingdom</option>
+        </select>
+
+        <input id="autocomplete" placeholder="Enter a city" type="text" />
+
+
+
+
+
+    </div>
+        </div>
+
+
+
+<div class="row">
+<div id="map"></div>
+</div>
+
+
+<div class="row">
+    <div class="col s12" id="listing">
+        <div id="results"></div>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+<div style="display: none">
+    <div id="info-content">
+        <table>
+            <tr id="iw-url-row" class="iw_table_row">
+                <td id="iw-icon" class="iw_table_icon"></td>
+                <td id="iw-url"></td>
+            </tr>
+            <tr id="iw-address-row" class="iw_table_row">
+                <td class="iw_attribute_name">Address:</td>
+                <td id="iw-address"></td>
+            </tr>
+            <tr id="iw-phone-row" class="iw_table_row">
+                <td class="iw_attribute_name">Telephone:</td>
+                <td id="iw-phone"></td>
+            </tr>
+            <tr id="iw-rating-row" class="iw_table_row">
+                <td class="iw_attribute_name">Rating:</td>
+                <td id="iw-rating"></td>
+            </tr>
+            <tr id="iw-website-row" class="iw_table_row">
+                <td class="iw_attribute_name">Website:</td>
+                <td id="iw-website"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+
+
+<script src="map.js" type="application/javascript"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBagsyf0IF1HvdzheTHEDV8d1hqPanqfIA&libraries=places&callback=initMap"
+        async defer></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
